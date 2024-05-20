@@ -1,5 +1,5 @@
-Scalikejdbc
------------
+Scalikejdbc ORM
+---------------
 >Scalikejdbc feature test and performance benchmark against H2 using Scala 3.
 
 Test
