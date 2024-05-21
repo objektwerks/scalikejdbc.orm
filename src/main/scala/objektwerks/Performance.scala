@@ -33,4 +33,5 @@ class Performance():
     store.updateTodo(todo)
 
   @Benchmark
-  def listTodos(): Seq[Todo] = store.listTodos()
+  def listTodos(): Seq[Todo] =
+    store.listTodos()
