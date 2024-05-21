@@ -31,4 +31,5 @@ Comparison
 
 Resources
 ---------
-* [ScalikeJdbc  ORM](https://scalikejdbc.org/documentation/orm.html)
+* [ScalikeJdbc](https://scalikejdbc.org/)
+* [ScalikeJdbc ORM](https://scalikejdbc.org/documentation/orm.html)
