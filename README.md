@@ -19,8 +19,8 @@ Results
 3. listTodos - 42.660
 >Total time: 603 s (10:03), 10 warmups, 10 iterations, average time in microseconds, completed **2024.5.21**
 
-Note
-----
+Comparison
+----------
 >Classic ScalikeJdbc is faster than ScalikeJdbc ORM:
 
 >OpenJDK Runtime Environment Zulu22.30+13-CA (build 22.0.1+8), **Scala 3.5.0-RC1**, Apple M1
