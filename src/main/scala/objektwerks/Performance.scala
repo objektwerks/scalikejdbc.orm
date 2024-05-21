@@ -25,7 +25,7 @@ class Performance():
   @Benchmark
   def addTodo(): Todo =
     todo = Todo(task = UUID.randomUUID.toString)
-    todo = store.addTodo(todo)
+    todo = todo.copy(id = store.addTodo(todo))
     todo
 
   @Benchmark
