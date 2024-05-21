@@ -21,9 +21,7 @@ final class Store(config: Config):
     todo.copy(id = id)
 
   def updateTodo(todo: Todo): Boolean =
-    DB localTx { implicit session =>
-      sql"update todo set task = ${todo.task} where id = ${todo.id}".update()
-    }
-    true
+    val count = Todo.updateById(todo.id).withAttributes("task" -> todo.task)
+    count > 0
 
   def listTodos(): Seq[Todo] = Todo.findAll()
