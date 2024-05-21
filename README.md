@@ -21,7 +21,7 @@ Results
 
 Comparison
 ----------
->Classic ScalikeJdbc is faster than ScalikeJdbc ORM:
+>Classic ScalikeJdbc is more performant than ScalikeJdbc ORM:
 
 >OpenJDK Runtime Environment Zulu22.30+13-CA (build 22.0.1+8), **Scala 3.5.0-RC1**, Apple M1
 1. addTodo - 33.005
