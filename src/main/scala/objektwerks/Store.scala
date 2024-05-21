@@ -11,10 +11,10 @@ final class Store(config: Config):
 
   ConnectionPool.singleton(url, user, password)
 
-  val todoColumnName = Todo.column
+  val column = Todo.column
 
   def addTodo(todo: Todo): Todo =
-    val id = Todo.createWithNamedValues(todoColumnName.task -> todo.task)
+    val id = Todo.createWithNamedValues(column.task -> todo.task)
     todo.copy(id = id)
 
   def updateTodo(todo: Todo): Boolean =
