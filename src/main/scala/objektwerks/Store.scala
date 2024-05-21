@@ -12,6 +12,7 @@ final class Store(config: Config):
   ConnectionPool.singleton(url, user, password)
 
   val column = Todo.column
+  val task = column.columns(1).value
 
   def addTodo(todo: Todo): Todo =
     val id = Todo
@@ -24,7 +25,7 @@ final class Store(config: Config):
     val count = Todo
       .updateById(todo.id)
       .withAttributes(
-        "task" -> todo.task
+        task -> todo.task
       )
     count > 0
 
