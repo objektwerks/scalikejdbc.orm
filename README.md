@@ -28,3 +28,7 @@ Comparison
 2. updateTodo - 30.721
 3. listTodos - 25.852
 >Total time: 602 s (10:02), 10 warmups, 10 iterations, average time in microseconds, completed **2024.5.21**
+
+Resources
+---------
+* [ScalikeJdbc  ORM](https://scalikejdbc.org/documentation/orm.html)
