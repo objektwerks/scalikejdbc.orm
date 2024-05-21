@@ -28,4 +28,5 @@ final class Store(config: Config):
       )
     count > 0
 
-  def listTodos(): Seq[Todo] = Todo.findAll()
+  def listTodos(): Seq[Todo] =
+    Todo.findAll()
