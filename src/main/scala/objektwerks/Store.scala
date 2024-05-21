@@ -14,11 +14,18 @@ final class Store(config: Config):
   val column = Todo.column
 
   def addTodo(todo: Todo): Todo =
-    val id = Todo.createWithNamedValues(column.task -> todo.task)
+    val id = Todo
+      .createWithNamedValues(
+        column.task -> todo.task
+      )
     todo.copy(id = id)
 
   def updateTodo(todo: Todo): Boolean =
-    val count = Todo.updateById(todo.id).withAttributes("task" -> todo.task)
+    val count = Todo
+      .updateById(todo.id)
+      .withAttributes(
+        "task" -> todo.task
+      )
     count > 0
 
   def listTodos(): Seq[Todo] = Todo.findAll()
