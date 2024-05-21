@@ -2,10 +2,6 @@ Scalikejdbc ORM
 ---------------
 >Scalikejdbc ORM feature test and performance benchmark against H2 using Scala 3.
 
-Todo
-----
-1. Refactor to use ORM module.
-
 Test
 ----
 1. sbt clean test
