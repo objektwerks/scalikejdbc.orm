@@ -21,13 +21,12 @@ final class Store(config: Config):
       )
     todo.copy(id = id)
 
-  def updateTodo(todo: Todo): Boolean =
-    val count = Todo
+  def updateTodo(todo: Todo): Int =
+    Todo
       .updateById(todo.id)
       .withAttributes(
         task -> todo.task
       )
-    count > 0
 
   def listTodos(): Seq[Todo] =
     Todo.findAll()
