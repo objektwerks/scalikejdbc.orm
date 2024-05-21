@@ -1,6 +1,6 @@
 ScalikeJdbc ORM
 ---------------
->ScalikeJdbc ORM feature test and performance benchmark against H2 using Scala 3.
+>ScalikeJdbc ORM feature tests and performance benchmark against H2 using Scala 3.
 
 Test
 ----
