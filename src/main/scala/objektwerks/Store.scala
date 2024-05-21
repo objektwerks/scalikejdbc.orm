@@ -26,9 +26,4 @@ final class Store(config: Config):
     }
     true
 
-  def listTodos(): Seq[Todo] =
-    DB readOnly { implicit session =>
-      sql"select * from todo"
-        .map(rs => Todo( rs.int("id"), rs.string("task") ) )
-        .list()
-    }
+  def listTodos(): Seq[Todo] = Todo.findAll()
