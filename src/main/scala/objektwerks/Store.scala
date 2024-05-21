@@ -4,9 +4,6 @@ import com.typesafe.config.Config
 
 import scalikejdbc.*
 
-object Store:
-  def apply(config: Config): Store = new Store(config)
-
 final class Store(config: Config):
   val url = config.getString("db.url")
   val user = config.getString("db.user")
