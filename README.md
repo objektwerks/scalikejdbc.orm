@@ -1,6 +1,6 @@
-Scalikejdbc ORM
+ScalikeJdbc ORM
 ---------------
->Scalikejdbc ORM feature test and performance benchmark against H2 using Scala 3.
+>ScalikeJdbc ORM feature test and performance benchmark against H2 using Scala 3.
 
 Test
 ----
@@ -18,3 +18,8 @@ Results
 2. updateTodo - 37.679
 3. listTodos - 42.660
 >Total time: 603 s (10:03), 10 warmups, 10 iterations, average time in microseconds, completed **2024.5.21**
+
+Note
+----
+>Classic ScalikeJdbc is faster than ScalikeJdbc ORM:
+
