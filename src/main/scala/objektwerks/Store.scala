@@ -14,12 +14,11 @@ final class Store(config: Config):
   val column = Todo.column
   val task = column.columns(1).value
 
-  def addTodo(todo: Todo): Todo =
-    val id = Todo
+  def addTodo(todo: Todo): Long =
+    Todo
       .createWithNamedValues(
         column.task -> todo.task
       )
-    todo.copy(id = id)
 
   def updateTodo(todo: Todo): Int =
     Todo
