@@ -5,7 +5,7 @@ organization := "objektwerks"
 version := "0.4-SNAPSHOT"
 scalaVersion := "3.5.2"
 libraryDependencies ++= {
-  val scalikejdbcVersion = "4.3.1"
+  val scalikejdbcVersion = "4.3.2"
   Seq(
     "org.scalikejdbc" %% "scalikejdbc" % scalikejdbcVersion,
     "org.scalikejdbc" %% "scalikejdbc-orm" % scalikejdbcVersion,
